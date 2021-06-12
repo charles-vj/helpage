@@ -1,8 +1,9 @@
 import React from 'react'
-import { Card, Form, Button, Alert} from 'react-bootstrap'
+import { Card, Form, Button, Alert, Media} from 'react-bootstrap'
 import { useRef, useState } from 'react'
 import { useAuth } from '../Contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
+import Navbar from './Navbar.js'
 
 
 export default function Login() {
@@ -31,6 +32,7 @@ export default function Login() {
 
     return (
         <div>
+            <Navbar />
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4">Log in</h2>
@@ -38,7 +40,7 @@ export default function Login() {
                     {error && <Alert variant="danger">{error}</Alert>}
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
-                            <Form.Label>Email</Form.Label>
+                            <Form.Label className="text-center">Email</Form.Label>
                             <Form.Control type="email" ref={emailRef} required />
                         </Form.Group>
                         <Form.Group id="password">
@@ -46,7 +48,7 @@ export default function Login() {
                             <Form.Control type="password" ref={passwordRef} required />
                         </Form.Group>
                         
-                        
+                        <Card.Text></Card.Text>
                         <Button disabled={loading} className="w-100" type="Submit">
                             Log in
                         </Button>

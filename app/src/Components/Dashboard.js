@@ -79,9 +79,9 @@ export default function  Dashboard() {
     
     return (
         <>
-         <Card>
+         <Card className="bg-warning">
             <Card.Body>
-                <h2 className="text-center">Profile</h2>
+                <h2 className="text-center" style = {{ color : "Black"}}>Profile</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
                     <Form.Group id="name">
@@ -109,22 +109,23 @@ export default function  Dashboard() {
             </Card.Body>
          </Card>
          <CardDeck>
-         <Card>
+         <Card className="bg-dark text-light" >
             <Card.Body>
                 <h2 className="text-center mb-4">Helpers available</h2>
                 <div id="user-list">
                 {helpers.map((helper) => (
-                    <p>{helper.name}{helper.pin}</p>
-          ))}
+                    <p>{helper.name}</p>
+                ))}
                 </div>
             </Card.Body>
          </Card>
-         <Card>
+         
+         <Card className="bg-danger text-light">
             <Card.Body>
                 <h2 className="text-center mb-4">People looking for help</h2>
                 <div id="user-list">
                 {helpees.map((helpee) => (
-                    <p>{helpee.name}{helpee.pin}</p>
+                    <p>{helpee.name}</p>
                 ))}
                 </div>
             </Card.Body>
