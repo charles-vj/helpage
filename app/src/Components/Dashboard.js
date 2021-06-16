@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect }  from 'react'
-import { Card, Button, Alert, Form, CardDeck } from 'react-bootstrap'
+import { Card, Button, Alert, Form, CardDeck, Nav } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 import { useAuth } from "../Contexts/AuthContext"
 import { db } from '../firebase'
@@ -79,6 +79,19 @@ export default function  Dashboard() {
     
     return (
         <>
+        <Nav fill variant="tabs" defaultActiveKey="/home">
+          <Nav.Item>
+            <Nav.Link href="/">Profile</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="link-1">Help Wanted</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="disabled">
+              Helper
+            </Nav.Link>
+          </Nav.Item>
+        </Nav>
          <Card className="bg-warning">
             <Card.Body>
                 <h2 className="text-center" style = {{ color : "Black"}}>Profile</h2>
