@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/helpage/static/js/main.89d1e892.chunk.js",
+    "main.js.map": "/helpage/static/js/main.89d1e892.chunk.js.map",
+    "runtime-main.js": "/helpage/static/js/runtime-main.9af264b7.js",
+    "runtime-main.js.map": "/helpage/static/js/runtime-main.9af264b7.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/helpage/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.b7fc0fc8.chunk.js": "/helpage/static/js/2.b7fc0fc8.chunk.js",
+    "static/js/2.b7fc0fc8.chunk.js.map": "/helpage/static/js/2.b7fc0fc8.chunk.js.map",
+    "index.html": "/helpage/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/helpage/static/css/2.61b4cb56.chunk.css.map",
+    "static/js/2.b7fc0fc8.chunk.js.LICENSE.txt": "/helpage/static/js/2.b7fc0fc8.chunk.js.LICENSE.txt",
+    "static/media/4.ef57fc10.svg": "/helpage/static/media/4.ef57fc10.svg",
+    "static/media/5.8ebc0a99.svg": "/helpage/static/media/5.8ebc0a99.svg",
+    "static/media/7.8808d7d6.svg": "/helpage/static/media/7.8808d7d6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9af264b7.js",
+    "static/css/2.61b4cb56.chunk.css",
+    "static/js/2.b7fc0fc8.chunk.js",
+    "static/js/main.89d1e892.chunk.js"
+  ]
+}
